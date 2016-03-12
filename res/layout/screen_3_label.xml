@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:id="@+id/Screen3_root"
+    >
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_column="0"
+	    android:layout_weight="1"     
+	    android:text=""
+	    />
+	 <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="50dp" 
+	    android:layout_column="1"
+	    android:layout_weight="20"
+	    android:textSize="24sp"
+	    android:gravity="center_horizontal"
+	    android:text="@string/screen3_caption"
+	    />
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_column="2"
+	    android:layout_weight="1"     
+	    android:text=""
+	    />
+</TableRow>
+</TableLayout>
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TableRow
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+		<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_column="0"
+			    android:layout_weight="1"				
+				android:text=" New Label:"
+				/>				    
+		<EditText android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+				android:layout_column="1"
+			    android:layout_weight="4"
+		        android:id="@+id/etSensorDataLabel"
+		         />	
+		<Button android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:id="@+id/btScreen3_AddLabel"
+				android:layout_column="2"
+			    android:layout_weight="1"				
+				android:text="Add"
+				/>				    		         
+	</TableRow>
+</TableLayout>
+
+
+<TextView android:layout_height="20dp"
+		android:layout_width="fill_parent"
+		android:layout_gravity="bottom"		
+		android:text=" Labels:"
+		/>			    
+<!--ScrollView 
+	android:id="@+id/scrollView" 
+	android:layout_width="fill_parent" 
+	android:layout_height="700px" 
+	android:scrollbarStyle="outsideOverlay" android:background="@android:drawable/edit_text"--> 
+	<!--TextView 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/tvScreen3LabelList" --> 
+<EditText
+    android:inputType="textMultiLine"
+    android:lines="15"
+    android:minLines="15"
+    android:gravity="top|left"
+    android:maxLines="100"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:scrollbars="vertical"
+    android:fadeScrollbars="false"
+    android:id="@+id/tvScreen3LabelList"
+/>
+ 
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="20dp"
+	    android:layout_column="0"
+	    android:layout_weight="1"     
+	    android:text="  "
+	    />
+	 <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="20dp" 
+	    android:layout_column="1"
+	    android:layout_weight="1"
+	    android:text=" "
+	    />
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="20dp"
+	    android:layout_column="2"
+	    android:layout_weight="1"
+	    android:text="  "
+	    />
+</TableRow>
+</TableLayout>
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    >
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<Button android:layout_height="80dp"
+				android:layout_width="0.0dip"
+				android:id="@+id/btScreen3_Back"
+				android:text="Back"
+	    		android:layout_column="0"				
+			    android:layout_weight="1"
+			    android:textSize="20sp"			
+				/>
+	    <Button android:layout_height="80dp"
+				android:layout_width="0.0dip"
+				android:id="@+id/btScreen3_Next"
+	    		android:layout_column="1"
+			    android:layout_weight="1"
+				android:text="Next"
+				android:textSize="20sp"
+				/>				    
+	</TableRow>
+</TableLayout>
+
+ 	    
+</LinearLayout>
+
+

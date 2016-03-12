@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:id="@+id/Screen2_root"
+    >
+    
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_column="0"
+	    android:layout_weight="1"     
+	    android:text=" "
+	    />
+	 <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="35dp" 
+	    android:layout_column="1"
+	    android:layout_weight="20"
+	    android:textSize="24sp"
+	    android:gravity="center_horizontal"
+	    android:text="@string/screen2_caption"
+	    />
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_column="2"
+	    android:layout_weight="1"     
+	    android:text=" "
+	    />
+</TableRow>
+</TableLayout>
+    
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_column="0"
+    android:layout_weight="1"   
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<TextView  
+	android:id="@+id/Enable"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="  Enable"
+    />
+</TableRow>
+    
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >	
+	<CheckBox
+		android:layout_height="40dp"
+		android:id="@+id/chkAccl">
+	</CheckBox>
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >	
+	<CheckBox
+		android:layout_height="40dp"
+		android:id="@+id/chkLinearAccl">
+	</CheckBox>
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >	
+	<CheckBox
+		android:layout_height="40dp"
+		android:id="@+id/chkGravity">
+	</CheckBox>
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >	
+	<CheckBox
+		android:layout_height="40dp"
+		android:id="@+id/chkGyro">
+	</CheckBox>
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >
+	<CheckBox
+		android:layout_height="40dp"
+		android:id="@+id/chkOrient">
+	</CheckBox>
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >
+	<CheckBox
+		android:layout_height="40dp"
+		android:id="@+id/chkMagnetic">
+	</CheckBox>
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >		
+	<CheckBox
+		android:layout_height="40dp"
+		android:id="@+id/chkLight">
+	</CheckBox>
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >		
+	<CheckBox
+		android:layout_height="40dp"
+		android:id="@+id/chkBarometer">
+	</CheckBox>
+</TableRow>
+
+</TableLayout>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_column="1"
+    android:layout_weight="2"   
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<TextView  
+	android:id="@+id/SensorGroup"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="  Sensor"
+    />
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<RadioGroup
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:id="@+id/RdGpSensor">
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:id="@+id/RdSensor_Accl"
+		android:text="@string/accl">
+	</RadioButton>`
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:id="@+id/RdSensor_LinearAccl"
+		android:text="@string/linearaccl">
+	</RadioButton>`
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:id="@+id/RdSensor_Gravity"
+		android:text="@string/gravity">
+	</RadioButton>`
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:id="@+id/RdSensor_Gyro"
+		android:text="@string/gyro">
+	</RadioButton>
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:id="@+id/RdSensor_Orient"
+		android:text="@string/orient">
+	</RadioButton>	
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:id="@+id/RdSensor_Magnetic"
+		android:text="@string/magnet">
+	</RadioButton>	
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:id="@+id/RdSensor_Light"
+		android:text="@string/light">
+	</RadioButton>
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="41dp"
+		android:id="@+id/RdSensor_Barometer"
+		android:text="@string/barometer">
+	</RadioButton>
+</RadioGroup>
+</TableRow>
+</TableLayout>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_column="2"
+    android:layout_weight="2"   
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<TextView  
+	android:id="@+id/DelayMode"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="  Sensor Delay Mode"
+    />
+</TableRow>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<RadioGroup
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:id="@+id/RdGpSensorMode">
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/RdSensorMode_Fastest"
+		android:text="@string/fastest">
+	</RadioButton>
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/RdSensorMode_Game"
+		android:text="@string/game">
+	</RadioButton>
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/RdSensorMode_Normal"
+		android:text="@string/normal">
+	</RadioButton>
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/RdSensorMode_UI"
+		android:text="@string/ui">
+	</RadioButton>
+</RadioGroup>
+</TableRow>
+</TableLayout>
+</TableRow>
+</TableLayout>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp"
+	    android:layout_column="0"
+	    android:layout_weight="1"     
+	    android:text="  "
+	    />
+	 <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp" 
+	    android:layout_column="1"
+	    android:layout_weight="1"
+	    android:text=" "
+	    />
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp"
+	    android:layout_column="2"
+	    android:layout_weight="1"
+	    android:text="  "
+	    />
+</TableRow>
+</TableLayout>
+<View  
+    android:layout_width="fill_parent"  
+    android:layout_height="3px"  
+    android:background="?android:attr/listDivider"  
+/>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp"
+	    android:layout_column="0"
+	    android:layout_weight="1"     
+	    android:text="  "
+	    />
+	 <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp" 
+	    android:layout_column="1"
+	    android:layout_weight="1"
+	    android:text=" "
+	    />
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp"
+	    android:layout_column="2"
+	    android:layout_weight="1"
+	    android:text="  "
+	    />
+</TableRow>
+</TableLayout>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >		
+	<CheckBox
+		android:layout_height="40dp"
+		android:gravity="center_vertical"
+    	android:layout_column="0"
+    	android:layout_weight="1"
+    	android:text="@string/mic"
+		android:id="@+id/chkMic">
+	</CheckBox>
+	<CheckBox
+		android:layout_height="40dp"
+		android:gravity="center_vertical"
+    	android:layout_column="1"
+    	android:layout_weight="1"
+    	android:text="@string/cellular"
+		android:id="@+id/chkCellular">
+	</CheckBox>
+</TableRow>
+    
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    >
+	<CheckBox
+		android:layout_height="wrap_content"
+		android:id="@+id/chkGPS"
+    	android:layout_column="0"
+    	android:layout_weight="2"     
+		android:text="@string/gps">
+	</CheckBox>  
+	
+	<TableLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="40dp"
+     	android:layout_column="1"
+    	android:layout_weight="2"        	
+    >
+		<TableRow
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    >
+			<CheckBox
+				android:layout_height="wrap_content"
+				android:id="@+id/chkWifi"
+		    	android:layout_column="0"
+		    	android:layout_weight="1"     		
+				android:text="@string/wifi">
+			</CheckBox>
+				<Spinner
+				android:id="@+id/Screen2_spnWiFiScanSpeed"
+			    android:layout_width="wrap_content"
+			    android:layout_column="1"
+			    android:layout_weight="1"
+			    android:gravity="center_vertical"
+			    />
+		</TableRow>
+	</TableLayout>
+	
+	
+</TableRow>
+</TableLayout>
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp"
+	    android:layout_column="0"
+	    android:layout_weight="1"     
+	    android:text="  "
+	    />
+	 <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp" 
+	    android:layout_column="1"
+	    android:layout_weight="1"
+	    android:text=" "
+	    />
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="2dp"
+	    android:layout_column="2"
+	    android:layout_weight="1"
+	    android:text="  "
+	    />
+</TableRow>
+</TableLayout>
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    >
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<Button android:layout_height="80dp"
+				android:layout_width="0.0dip"
+				android:id="@+id/btScreen2_Back"
+				android:text="Back"
+	    		android:layout_column="0"				
+			    android:layout_weight="1"
+			    android:textSize="20sp"				
+				/>		
+	    
+	    <Button android:layout_height="80dp"
+				android:layout_width="0.0dip"
+				android:id="@+id/btScreen2_Next"
+	    		android:layout_column="1"
+			    android:layout_weight="1"
+				android:text="Next"
+				android:textSize="20sp"
+				/>				    
+	</TableRow>
+</TableLayout>
+
+	
+</LinearLayout>
+
+

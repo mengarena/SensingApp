@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbars="none"
+	-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:id="@+id/ScreenUploadData_root"
+    >
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_column="0"
+	    android:layout_weight="1"     
+	    android:text=""
+	    />
+	 <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="50dp" 
+	    android:layout_column="1"
+	    android:layout_weight="20"
+	    android:textSize="24sp"
+	    android:gravity="center_horizontal"
+	    android:text="@string/screen_upload_data_caption"
+	    />
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_column="2"
+	    android:layout_weight="1"     
+	    android:text=""
+	    />
+</TableRow>
+</TableLayout>
+
+<TextView android:layout_height="40dp"
+		android:layout_width="fill_parent"
+		android:gravity="center_vertical"
+		android:text="  Select Files to Upload:"
+		/>
+
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="350dp"
+	android:scrollbars="vertical"
+	android:fadeScrollbars="false"
+	>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ScreenUploadData_ChkLayoutFileName">
+</LinearLayout>
+
+</ScrollView>
+
+
+<ProgressBar
+	android:id="@+id/ScreenUploadData_UploadProgress"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal"
+	android:layout_centerHorizontal="true"
+	android:indeterminate="true"
+	android:visibility="gone"/>
+
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    >
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<Button android:layout_height="80dp"
+				android:layout_width="0.0dip"
+				android:id="@+id/btScreenUploadData_Back"
+				android:text="Back"
+	    		android:layout_column="0"				
+			    android:layout_weight="1"
+			    android:textSize="20sp"				
+				/>
+	    <Button android:layout_height="80dp"
+				android:layout_width="0.0dip"
+				android:id="@+id/btScreenUploadData_Upload"
+	    		android:layout_column="1"
+			    android:layout_weight="1"
+				android:text="@string/upload"
+				android:textSize="20sp"
+				/>				    
+	</TableRow>
+</TableLayout>
+
+
+
+</LinearLayout>
+

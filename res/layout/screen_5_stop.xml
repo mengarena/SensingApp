@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:id="@+id/Screen5_root"
+    >
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_column="0"
+	    android:layout_weight="1"     
+	    android:text=""
+	    />
+	 <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="50dp" 
+	    android:layout_column="1"
+	    android:layout_weight="20"
+	    android:textSize="24sp"
+	    android:gravity="center_horizontal"
+	    android:text="@string/screen5_caption"
+	    />
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_column="2"
+	    android:layout_weight="1"     
+	    android:text=""
+	    />
+</TableRow>
+</TableLayout>
+    
+
+<!-- TextView android:layout_height="20dp"
+		android:layout_width="fill_parent"		
+		android:text=" Sensing Following Info:"
+		-->
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TableRow
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+	    <TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_column="0"
+			    android:layout_weight="1"				
+				android:text=" Sensing Following Info:"
+				/>
+	    <TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_column="1"
+			    android:layout_weight="1"				
+				android:text=""			    
+		        android:id="@+id/Screen5_GpsUp"
+				/>	
+	</TableRow>
+</TableLayout>
+		
+<TextView android:layout_height="180dp"
+		android:layout_width="fill_parent"
+		android:text=""
+        android:id="@+id/Screen5_SensingInfo"
+		/>
+
+<View  
+    android:layout_width="fill_parent"  
+    android:layout_height="4px"  
+    android:background="?android:attr/listDivider"  
+/>
+
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TableRow
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+	    <TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_column="0"
+			    android:layout_weight="1"				
+				android:text=" Temp Label:"
+				/>				    
+		<EditText android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+				android:layout_column="1"
+			    android:layout_weight="5"
+		        android:id="@+id/Screen5_etTempLabel"
+		         />
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:id="@+id/Screen5_chkUseTempLabel"
+	    	android:layout_column="2"
+	    	android:layout_weight="1"     
+			android:text="">
+		</CheckBox>   
+					
+	</TableRow>
+</TableLayout>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TableRow
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+	    <TextView android:layout_height="20dp"
+				android:layout_width="fill_parent"			
+				android:text=" Existing Label:"
+				/>				    					
+	</TableRow>
+</TableLayout>
+
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="150dp"
+	android:scrollbars="vertical"
+	android:fadeScrollbars="false"
+	android:fillViewport="true"
+	android:id="@+id/Screen5_scrollview"
+	>
+<RadioGroup android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/Screen5_LabelRadioButtonGroup">
+
+</RadioGroup>
+</ScrollView>
+
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    >
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<Button android:layout_height="80dp"
+			android:layout_width="0.0dip"
+			android:id="@+id/btScreen5_Stop"
+			android:text="Stop"
+			android:layout_weight="1"
+			android:textSize="20sp"
+		/>			
+	</TableRow>
+</TableLayout>
+
+	    
+
+<!--LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/Screen5_LabelButtonLayout">
+-->
+
+</LinearLayout>
+
+

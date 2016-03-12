@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sensing</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="enableSensor">  Enable</string>
+    <string name="sensorcaption">  Sensor</string>
+    <string name="delaymodecaption">  Sensor Delay Mode</string>
+    <string name="orient">Orientation</string>
+    <string name="gyro">Gyroscope</string>
+    <string name="accl">Accelerometer</string>
+    <string name="linearaccl">Linear Accl</string>
+    <string name="gravity">Gravity</string>
+    <string name="magnet">Magnetic</string>
+    <string name="light">Light</string>
+    <string name="barometer">Barometer</string>
+    <string name="mic">Microphone</string>
+    <string name="cellular">Cellular Network</string>
+    <string name="fastest">Fastest</string>
+    <string name="game">Game</string>
+    <string name="normal">Normal</string>
+    <string name="ui">UI</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="app_folder">Sensing</string>
+    <string name="sensordata_folder">SensorData</string>
+    <string name="setting_folder">Setting</string>
+    <string name="fileinterval">File Interval: </string>
+    <string name="defaultinfo">Press the button to record Sensor/WiFi/GPS data!</string>
+    <string name="no_sensorWiFiGPS">No sensor/WiFi/GPS is installed/enabled in this phone!</string>
+    <string name="promptselect">No enabled Sensor/Wifi/GPS is selected. Please select Sensor/Wifi/GPS!</string>
+    <string name="wifi">WiFi</string>
+    <string name="gps">GPS</string>
+    <string name="nolabel">   No Label</string>
+    <string name="upload">Upload</string>
+    <string name="cancelupload">Cancel</string>
+    <string name="welcomeinfo">Welcome to Sensing</string>
+    <string name="sensorselectioninfo">Select Sensors</string>
+    <string name="screen1_caption">1: Set Project &amp; User Name</string>
+    <string name="screen2_caption">2: Select Sensors</string>
+    <string name="screen3_caption">3: Configure Data Labels</string>
+    <string name="screen4_caption">4: Start Sensing</string>
+    <string name="screen5_caption">5: Sensing</string>
+    <string name="screen6_caption">6: Summary</string>
+    <string name="screen_upload_data_caption">Upload Data</string>
+</resources>
